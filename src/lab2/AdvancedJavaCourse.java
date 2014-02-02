@@ -55,7 +55,7 @@ public class AdvancedJavaCourse extends IntroJavaCourse {
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
         }
-        this.courseName = courseName;
+        this.courseName = courseName;  
     }
 
     
