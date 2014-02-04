@@ -12,10 +12,6 @@ public class AdvancedJavaCourse extends IntroJavaCourse{
     
     
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
-    }
 
     public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
