@@ -2,22 +2,14 @@ package lab2;
 
 import javax.swing.JOptionPane;
 
-/**
- * Describe responsibilities here.
- *
- * @author      your name goes here
- * @version     1.00
- */
+
 public class IntroToProgrammingCourse implements CollegeProgrammingCourses {
     private String courseName;
     private String courseNumber;
     private double credits;
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
-    }
-
+   
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -30,7 +22,7 @@ public class IntroToProgrammingCourse implements CollegeProgrammingCourses {
         }
         this.courseNumber = courseNumber;
     }
-
+    @Override
     public double getCredits() {
         return credits;
     }
@@ -43,11 +35,11 @@ public class IntroToProgrammingCourse implements CollegeProgrammingCourses {
         }
         this.credits = credits;
     }
-
+    @Override
     public String getCourseName() {
         return courseName;
     }
-
+    
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

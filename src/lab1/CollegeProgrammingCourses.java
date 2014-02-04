@@ -6,13 +6,12 @@ import javax.swing.JOptionPane;
 
 
 public abstract class CollegeProgrammingCourses {
+    private double credits;
     private String courseName;
     private String courseNumber;
-    private double credits;
 
-    public double getCredits() {
-        return credits;
-    }
+    public abstract double getCredits(); 
+    
     
      public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
@@ -20,12 +19,10 @@ public abstract class CollegeProgrammingCourses {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.setCredits(credits);
+        this.credits = credits;
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
+    public abstract String getCourseNumber(); 
      
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
@@ -36,9 +33,7 @@ public abstract class CollegeProgrammingCourses {
         this.courseNumber = courseNumber;
     }
 
-    public String getCourseName() {
-        return courseName;
-    }
+    public abstract String getCourseName();
 
    public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {

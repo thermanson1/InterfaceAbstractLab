@@ -12,14 +12,14 @@ public class IntroJavaCourse implements CollegeProgrammingCourses{
     private double credits;
     private String prerequisites;
 
-    
+    @Override
     public String getCourseName(){
         return courseName;
     }
     public void setCourseName(String courseName){
         this.courseName = courseName;
     }
-
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -27,7 +27,7 @@ public class IntroJavaCourse implements CollegeProgrammingCourses{
     public void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-
+    @Override
     public double getCredits() {
         return credits;
     }
